@@ -14,5 +14,14 @@ def fizz_buzz(num)
   puts judge_number(num)
 end
 
-input = gets.to_i
+def input
+  puts '数字を入力してください'
+  input = gets.to_i
+  while input < 1 || input == ''
+    puts '1以上の数字を入力してください'
+    input = gets.to_i
+  end
+  input
+end
+
 fizz_buzz(input)
