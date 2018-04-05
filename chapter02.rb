@@ -10,10 +10,9 @@ def judge_number(n)
   end
 end
 
-def fizz_buzz(answer)
-  puts answer
+def fizz_buzz(num)
+  puts judge_number(num)
 end
 
-puts '数字を入力してください'
-num = gets.to_i
-fizz_buzz(judge_number(num))
+input = gets.to_i
+fizz_buzz(input)
