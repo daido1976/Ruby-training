@@ -16,12 +16,12 @@ end
 
 def input
   puts '数字を入力してください'
-  number = gets.to_i
-  while number < 1
+  input = gets.to_i
+  while input < 1 || input == ''
     puts '1以上の数字を入力してください'
-    number = gets.to_i
+    input = gets.to_i
   end
-  number
+  input
 end
 
 fizz_buzz(input)
