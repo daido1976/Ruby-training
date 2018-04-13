@@ -1,6 +1,6 @@
 require './chapter06/convert_hash_syntax'
 
-RSpec.describe 'convert_hash_syntax' do
+RSpec.describe '#convert_hash_syntax' do
   it 'convert old_syntax to expected' do
     old_syntax = <<~TEXT
     {
