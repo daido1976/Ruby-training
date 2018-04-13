@@ -10,6 +10,7 @@ class ConvertHashSyntaxTest < Minitest::Test
       :gender  =>  :male
     }
     TEXT
+
     expected = <<~TEXT
     {
       name: 'Daido',
@@ -17,6 +18,7 @@ class ConvertHashSyntaxTest < Minitest::Test
       gender: :male
     }
     TEXT
+    
     assert_equal expected, convert_hash_syntax(old_syntax)
   end
 end
