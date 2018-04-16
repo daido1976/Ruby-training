@@ -22,6 +22,6 @@ RSpec.describe '#convert_hash_syntax' do
   }
 
   it 'convert old_syntax to expected' do
-    expect(expected).to eq convert_hash_syntax(old_syntax)
+    expect(convert_hash_syntax(old_syntax)).to eq expected
   end
 end
