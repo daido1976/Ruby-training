@@ -11,7 +11,7 @@ RSpec.describe '#convert_hash_syntax' do
     TEXT
   }
 
-  let(:expected) {
+  let(:converted_syntax) {
     <<~TEXT
     {
       name: 'Daido',
@@ -22,6 +22,6 @@ RSpec.describe '#convert_hash_syntax' do
   }
 
   it 'convert old_syntax to expected' do
-    expect(convert_hash_syntax(old_syntax)).to eq expected
+    expect(convert_hash_syntax(old_syntax)).to eq converted_syntax
   end
 end
