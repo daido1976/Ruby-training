@@ -40,5 +40,12 @@ RSpec.describe Gate do
         expect(mikuni.exit(ticket)).to be_truthy
       end
     end
+
+    context '十三で乗車し、三国で降車した場合' do
+      it '出場できる(OK)' do
+        juso.enter(ticket)
+        expect(mikuni.exit(ticket)).to be_truthy
+      end
+    end
   end
 end
