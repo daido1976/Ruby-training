@@ -21,7 +21,7 @@ RSpec.describe '#convert_hash_syntax' do
     TEXT
   }
 
-  it 'convert old_syntax to expected' do
+  it 'ハッシュ記法を古い記法から新しい記法に変換する' do
     expect(convert_hash_syntax(old_syntax)).to eq converted_syntax
   end
 end
