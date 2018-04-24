@@ -4,9 +4,9 @@ require './chapter08/bank'
 
 class DeepFreezableTest < Minitest::Test
   def test_deep_freeze_to_array
-    assert_equal ['Japan', 'US', 'India'], Team::COUNTRIES
+    assert_equal %w[Japan US India], Team::COUNTRIES
     assert Team::COUNTRIES.frozen?
-    assert Team::COUNTRIES.all? { |country| country.frozen? }
+    assert Team::COUNTRIES.all?(&:frozen?)
   end
 
   def test_deep_freeze_to_hash
