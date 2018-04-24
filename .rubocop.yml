@@ -20,3 +20,15 @@ Style/Documentation:
 # Line is too long を無視
 Metrics/LineLength:
   Enabled: false
+
+# Block has too many lines を無視
+Metrics/BlockLength:
+  Enabled: false
+
+# Method has too many lines を無視
+Metrics/MethodLength:
+  Enabled: false
+
+# Parenthesize the param を無視
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
