@@ -5,6 +5,8 @@ def to_hex(red, green, blue)
 end
 
 def to_ints(hex)
-  red, green, blue = hex[1..2], hex[3..4], hex[5..6]
-  [red, green, blue].map { |s| s.hex }
+  red = hex[1..2]
+  green = hex[3..4]
+  blue = hex[5..6]
+  [red, green, blue].map(&:hex)
 end
