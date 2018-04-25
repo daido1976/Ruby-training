@@ -5,7 +5,6 @@ AllCops:
   Exclude:
     - vendor/bundle/**/*
     - bin/*
-    - db/**/*
     - config/**/*
     - Gemfile
     - spec/spec_helper.rb
