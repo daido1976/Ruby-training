@@ -4,8 +4,6 @@ AllCops:
   # 除外するファイル
   Exclude:
     - vendor/bundle/**/*
-    - bin/*
-    - config/**/*
     - Gemfile
     - spec/spec_helper.rb
 
