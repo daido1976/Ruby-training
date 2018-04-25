@@ -2,6 +2,12 @@ class RegexpChecker
   def check_regexp
     text = input_text
     regexp = input_regexp
+    output_result(text, regexp)
+  end
+
+  private
+
+  def output_result(text, regexp)
     matches = text.scan(regexp)
     if matches.size.positive?
       puts "Matched: #{matches.join(', ')}"
@@ -9,8 +15,6 @@ class RegexpChecker
       puts 'Nothing matched.'
     end
   end
-
-  private
 
   def input_regexp
     print 'Pattern?: '
