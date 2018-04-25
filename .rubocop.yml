@@ -8,6 +8,7 @@ AllCops:
     - db/**/*
     - config/**/*
     - Gemfile
+    - spec/spec_helper.rb
 
 # Missing magic comment # frozen_string_literal: true. を無視
 Style/FrozenStringLiteralComment:
