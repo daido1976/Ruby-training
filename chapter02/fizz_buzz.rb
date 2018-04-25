@@ -4,11 +4,11 @@ end
 
 def judge_number
   num = input
-  if num % 15 == 0
+  if (num % 15).zero?
     'Fizz Buzz'
-  elsif num % 3 == 0
+  elsif (num % 3).zero?
     'Fizz'
-  elsif num % 5 == 0
+  elsif (num % 5).zero?
     'Buzz'
   else
     num.to_s
