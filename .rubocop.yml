@@ -19,7 +19,7 @@ Style/Documentation:
 
 # Line is too long を無視
 Metrics/LineLength:
-  Enabled: false
+  Max: 128
 
 # Block has too many lines を無視
 Metrics/BlockLength:
