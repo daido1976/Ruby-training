@@ -23,7 +23,8 @@ Metrics/LineLength:
 
 # Block has too many lines を無視
 Metrics/BlockLength:
-  Enabled: false
+  Exclude:
+    - 'spec/**/*.rb'
 
 # Method has too many lines を無視
 Metrics/MethodLength:
