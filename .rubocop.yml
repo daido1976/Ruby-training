@@ -28,7 +28,7 @@ Metrics/BlockLength:
 
 # Method has too many lines を無視
 Metrics/MethodLength:
-  Enabled: false
+  Max: 20
 
 # Parenthesize the param を無視
 Lint/AmbiguousBlockAssociation:
